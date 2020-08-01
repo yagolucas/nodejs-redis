@@ -8,13 +8,6 @@ export default {
             name, email, password
         }
 
-        await Mail.sendMail({
-            from: 'Yago Lucas teste <yagolucas.sf@gmail.com>',
-            to: `${name} <${email}>`,
-            sub: 'Primeiro email',
-            html: `Olá, ${name} bem vindo!!`
-        })
-
         return res.json(user);
     }
 }
